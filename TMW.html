@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Magical Way</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="TMW.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id ="cooldown">
+		<p id="flash">Молния перезаряжается</p>
+	</section>
+		<!-- <button id="start" onclick="LetsStart()">Начать игру</button> -->
+	<section id = "MAIN"></section>
+	<!-- <section id = 'Letsplay'><button id="go" onclick="NextStep()">Вперед</button></section> -->
+	<!-- <section id = 'logo'><img src="images/background/logo.png" alt=""></section> -->
+	<section id = 'history'><h2>Предыстория</h2><p>Волшебник по имени Медир решил стать обладателем всех стихий, но ему не доставало двух: воздуха и воды. Используя временное зелье невидимости, он проникает в священный лес и ворует артефакт, дарующий способности водной магии. Заполучив то что хотел, он пробудил всех духов воды, стороживших драгоценность.</p><p>Духи воды могут бежать за Медиром только в пределах леса. Водная стихия на них не действует.</p></section>
+	<section class='pauseANDgameover' id = 'task'><h2>Цель</h2><p>Дойти до конца карты, не позволяя духам вас задеть.</p><p>(Осторожно, духи-Исполины очень опасны.)</p></section>
+	<section class='pauseANDgameover' id = 'control'><h2>Управление</h2><p>Для движения используйте стрелочки "←" и "→".</p><p>Клавиша "1" : Огненный шар</p><p>Клавиша "2" : Каменная стена</p><p>Клавиша "3" : Волна</p><p>Клавиша "4" : Молния</p></section>
+	<section class='pauseANDgameover' id = 'pause'><h2>ПАУЗА</h2><p>Нажмите клавишу "пробел" для продолжения</p></section>
+	<section class='pauseANDgameover' id = "gameover"><h2>КОНЕЦ ИГРЫ</h2><p>Нажмите клавишу "F5", чтобы начать сначала</p></section>
+	<section class='pauseANDgameover' id = "finish"><h2>Победа</h2><p>Нажмите клавишу "F5", чтобы начать сначала</p></section>
+	<section id="mainScreen">
+			<section id="interface">
+				<section id="lefticons">
+					<img src="images/interface/avatar.png" id="AVA">
+					<section id="HPandMP">
+						<section class="PPframe"><section class="PPstatus" id ="HP">100</section></section>
+						<section class="PPframe"><section class="PPstatus" id ="MP">100</section></section>
+					</section>
+				</section>
+				<section id="righticons">
+					<section id="scoreNick">
+						<section id="score"><section class="numbers">0</section></section>
+						<section id="nickName"><section class="numbers">Medir</section></section>
+					</section>
+				</section>
+			</section>
+		<canvas id = "canvas" ></canvas>
+	</section>
+	<!-- <script src="scripts/TMW.js"></script> -->
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/characters.js"></script>
+	<script src="scripts/abilities.js"></script>
+	<script src="scripts/mechanics.js"></script>
+	<script src="scripts/graphics.js"></script>
+	<script src="scripts/animate.js"></script>
+</body>
+</html>

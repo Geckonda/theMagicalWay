@@ -1,0 +1,248 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+#MAIN{
+	position:absolute;
+	height: inherit;
+	width: inherit;
+	margin: 0;
+	background: url(images/background/thesec.png);
+	filter: blur(7px);
+}
+#mainScreen{
+		position:absolute;
+		width: 800px;
+		height: 600px;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+}
+	#canvas{
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		border-radius:10px;
+		border: 25px solid #CCCCCC;
+		visibility: visible;
+	}
+
+/*-----------Cooldown----------------*/
+	#flash{
+		position: absolute;
+		z-index: 5;
+		text-align: center;
+		color: white;
+		left:50%;
+		top:3%;
+		transform:translate(-50%,-50%);
+		font-size: 35px;
+		visibility: hidden;
+	}
+/*----------Interface----------------*/
+#interface{
+	visibility: visible;/*swap*/
+	width: 100%;
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+#lefticons{
+	position: relative;
+	z-index: 10;
+	width: 40%;
+	height: 120px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#righticons{
+	position: relative;
+	z-index: 10;
+	width: 40%;
+	height: 120px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+	/*-----------Avatar----------------*/
+		#AVA{
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			border:5px solid #fff;
+		}
+		#HPandMP{
+			width: 200px;
+			height: 75px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.PPframe{
+				width: 200px;
+				height: 25px;
+				border-radius:10px;
+				border: 2px solid #CCCCCC;
+		}
+		.PPstatus{
+		font-family: 'Seymour One', sans-serif;
+			box-sizing: border-box;
+			padding-top: 2px;
+				height: 25px;
+				border-radius:10px;
+				color: #fff;
+				text-align: center;
+		}
+			#HP{
+				background-color: #a00;
+				width: 200px;
+			}
+			#MP{
+				background-color: #00a;
+				width: 200px;
+			}
+
+	/*-----------Score----------------*/
+	#scoreNick{
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+			width: 250px;
+			height: 120px;
+	}
+	.numbers{
+		font-family: 'Seymour One', sans-serif;
+		display: block;
+		float: right;
+		margin-right: 10px;
+	}
+			#score{
+				justify-content: flex-end;
+				color: #fff;
+				font-size: 40px;
+			}
+			#nickName{
+				color: #fff;
+				font-size: 30px;
+			}
+
+/*-----------Pause----------------*/
+	.pauseANDgameover{
+		visibility: hidden;
+		position:absolute;
+		z-index: 10;
+		width: 800px;
+		height: 600px;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		border-radius:10px;
+		border: 25px solid #CCCCCC;
+		background-color: #111;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	h2{
+		color: #fff;
+		font-size: 100px;
+	}
+	p{
+		color: #fff;
+		font-size: 25px;
+	}
+/*-------------------Start the game----------------*/
+/*-----------------logo-----------*/
+#logo{
+		visibility: visible; 
+		position:absolute;
+		z-index: 10;
+		width: 800px;
+		height: 600px;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+}
+#history{
+		visibility: hidden;
+		position:absolute;
+		z-index: 10;
+		width: 800px;
+		height: 600px;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		border-radius:10px;
+		border: 25px solid #CCCCCC;
+		background-color: #111;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0 50px;
+}
+
+/*-----------Control-----------------*/
+	#control p{
+		font-size: 20px;
+	}
+	#Letsplay{
+		position:absolute;
+		z-index: 10;
+		width: 800px;
+		height: 600px;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+	}
+	#go{
+	position: absolute;
+	font-size: 20px;
+	z-index: 12;
+	left:50%;
+	top:110%;
+	transform:translate(-50%,-50%);
+	width: 140px;
+	height: 60px;
+	color:#E6C60B;
+	background-color: #010;
+	text-align: center;
+	border: 5px solid;
+	border-radius:10px;
+	 box-shadow: 0 9px #000;
+	}
+/*----------------------------------*/
+#start{
+	visibility: hidden;
+	position: absolute;
+	font-size: 40px;
+	z-index: 10;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	width: 240px;
+	height: 120px;
+	color:#E6C60B;
+	background-color: #010;
+	text-align: center;
+	border: 5px solid;
+	border-radius:10px;
+	 box-shadow: 0 9px #000;
+	}
+	#start:hover{
+	color: #000;
+	border: 5px solid #E6C60B;
+	background-color: #aaaaaa;
+	background-image: -webkit-linear-gradient(top, #ddd, #FFF300);
+	background-image: -moz-linear-gradient(top, #ddd, #FFF300);
+	background-image: -o-linear-gradient(top, #ddd, #FFF300);
+	background-image: linear-gradient(to bottom, #ddd, #FFF300);
+	}
+/*-----------------Finish------*/
+#finish{
+	background-color:#E6C60B;
+}
